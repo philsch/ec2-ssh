@@ -2,7 +2,7 @@
   "name": "ec2-ssh",
   "version": "0.0.1",
   "description": "Console tool based on NodeJS that simplifies connecting to AWS EC2 instances",
-  "main": "app.js",
+  "main": "ec2-ssh.js",
   "bin": {
     "ec2-ssh": "ec2-ssh.js"
   },
