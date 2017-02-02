@@ -1,0 +1,26 @@
+{
+  "name": "ec2-ssh",
+  "version": "0.0.1",
+  "description": "Console tool based on NodeJS that simplifies connecting to AWS EC2 instances",
+  "main": "ec2-ssh.js",
+  "bin": {
+    "ec2-ssh": "ec2-ssh.js"
+  },
+  "scripts": {
+    "install": "tabtab install",
+    "lint": "./node_modules/.bin/eslint ec2-ssh.js lib/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Philipp Schmiedel",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.9.0",
+    "inquirer": "^3.0.1",
+    "tabtab": "^2.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+# IDE
+.idea
+
+# NPM
+node_modules
+*.log
+
+# App specific
+ec2.json
