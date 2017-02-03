@@ -1,5 +1,8 @@
 # ec2-ssh
 
+[![Build Status](https://travis-ci.org/philsch/ec2-ssh.svg?branch=master)](https://travis-ci.org/philsch/ec2-ssh)
+[![npm version](https://badge.fury.io/js/ec2-ssh.svg)](https://badge.fury.io/js/ec2-ssh)
+
 Console tool based on NodeJS that simplifies connecting to AWS EC2 instances.
 
 ![](docs/example.gif)
@@ -7,7 +10,7 @@ Console tool based on NodeJS that simplifies connecting to AWS EC2 instances.
 ## Installation
 
 1. Ensure AWS API credentials are configured (e.g. by installing AWS CLI and running `aws configure`)
-2. Checkout this repository and run `npm install && npm link` or `npm -g install`
+2. `npm -g install ec2-ssh`
 3. During installation, you can choose how to install the auto-suggestion based on *node-tabtab*
 
 ## Features
