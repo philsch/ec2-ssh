@@ -1,5 +1,8 @@
 # ec2-ssh
 
+[![Build Status](https://travis-ci.org/philsch/ec2-ssh.svg?branch=master)](https://travis-ci.org/philsch/ec2-ssh)
+[![npm version](https://badge.fury.io/js/ec2-ssh.svg)](https://badge.fury.io/js/ec2-ssh)
+
 Console tool based on NodeJS that simplifies connecting to AWS EC2 instances.
 
 ![](docs/example.gif)
