@@ -10,7 +10,7 @@ Console tool based on NodeJS that simplifies connecting to AWS EC2 instances.
 ## Installation
 
 1. Ensure AWS API credentials are configured (e.g. by installing AWS CLI and running `aws configure`)
-2. Checkout this repository and run `npm install && npm link` or `npm -g install`
+2. `npm -g install ec2-ssh`
 3. During installation, you can choose how to install the auto-suggestion based on *node-tabtab*
 
 ## Features
