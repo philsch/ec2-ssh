@@ -2,16 +2,32 @@
   "name": "ec2-ssh",
   "version": "0.0.1",
   "description": "Console tool based on NodeJS that simplifies connecting to AWS EC2 instances",
+  "keywords": [
+    "aws",
+    "ec2",
+    "cli",
+    "ssh"
+  ],
+  "homepage": "https://github.com/philsch/ec2-ssh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philsch/ec2-ssh.git"
+  },
   "main": "ec2-ssh.js",
   "bin": {
     "ec2-ssh": "ec2-ssh.js"
   },
+  "files": [
+    "ec2-ssh.js",
+    "config.json",
+    "lib"
+  ],
   "scripts": {
     "install": "tabtab install",
     "lint": "./node_modules/.bin/eslint ec2-ssh.js lib/**",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Philipp Schmiedel",
+  "author": "Philipp Schmiedel <mail@philippschmiedel.com>",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.9.0",
