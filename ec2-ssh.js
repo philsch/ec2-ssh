@@ -30,6 +30,14 @@ if (IS_TABBED) {
       apiCalls.push(ec2list.getReachableEc2Instances(region));
     });
 
+    if (config.roles && Array.isArray(config.roles) && config.roles.length > 0) {
+      config.roles.forEach((roleArn) => {
+        config.regions.forEach((region) => {
+          apiCalls.push(ec2list.getReachableEc2Instances(region, roleArn));
+        });
+      });
+    }
+
     return Promise.all(apiCalls)
       .then(lists => done(null, lists.reduce((acc, list) => acc.concat(list), [])));
   });

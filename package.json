@@ -1,6 +1,6 @@
 {
   "name": "ec2-ssh",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Console tool based on NodeJS that simplifies connecting to AWS EC2 instances",
   "keywords": [
     "aws",
