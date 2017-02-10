@@ -18,7 +18,29 @@ Console tool based on NodeJS that simplifies connecting to AWS EC2 instances.
 - Tab completion lists your current running AWS instances
 - EC2 name-tag is displayed
 - User and path to SSH-Key is cached for each instance
+- support for AWS roles
 - ...
+
+## Configuration
+
+You can change the supported AWS regions and add additional accounts via AWS roles 
+([see docs](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html)) that will be retrieved 
+by the script. At the moment you have to edit the `config.json` manually. It is located in the same installation
+directory, just run `which ec2-ssh` to find the path.
+
+Example `config.json`:
+
+```
+{
+  "regions": [
+    "eu-central-1",
+    "eu-west-1
+  ],
+  "roles": [
+    "arn:aws:iam::1234567:role/admin"
+  ]
+}
+```
 
 ## Contribute
 
